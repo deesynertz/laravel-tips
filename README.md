@@ -4,35 +4,6 @@ Laravel Tips: A resource of useful Laravel development tips and tricks. Keep up 
 By [@deesynertz](https://github.com/deesynertz)
 
 
-# Database Block
-
-**check which database your laravel project connect to**
-
-  > in blade file
-
-  ```bash
- <?php
-    try {
-        \DB::connection()->getPDO();
-        echo \DB::connection()->getDatabaseName();
-        } catch (\Exception $e) {
-        echo 'None';
-    }
-?>
-  ```
-
-  > In Controller |Service | Trait | Helper files
-
-  ```bash
-  try {
-      \DB::connection()->getPDO();
-      echo \DB::connection()->getDatabaseName();
-      } catch (\Exception $e) {
-      echo 'None';
-  }
-  ```
-
-
 ### I welcome any contribution if you a have any tips you think we should know
 
 ### LISENCE AND CONTACT
